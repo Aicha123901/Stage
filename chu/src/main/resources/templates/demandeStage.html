@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demande de Stage</title>
+    <link rel="stylesheet">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Demande de Stage</h2>
+
+        <form>
+            <div class="left-section">
+                <label for="ecole">École :</label>
+                <select id="ecole" name="ecole" required>
+                    <option value="ENSA">ENSA</option>
+                    <option value="FST">FST</option>
+                    <option value="FMP">FMP</option>
+                    <option value="EST">EST</option>
+                    <option value="ENCG">ENCG</option>
+                </select>
+
+                <label for="specialte">Spécialité :</label>
+                <select id="specialte" name="specialte" required>
+                    <option value="Medecine">Medcine</option>
+                    <option value="Informatique">Informatique</option>
+                    <option value="Mécanique">Mécanique</option>
+                    <option value="Électronique">Électronique</option>
+                    <option value="Électrique">Électrique</option>
+                    
+                </select>
+
+                <label for="stageType">Type de Stage :</label>
+                <select id="stageType" name="stageType" required>
+                    <option value="initiation">Stage d'initiation</option>
+                    <option value="application">Stage d'application</option>
+                    <option value="pfe">Stage PFE</option>
+                </select>
+
+                <label for="cv">Téléverser CV :</label>
+                <input type="file" id="cv" name="cv" accept=".pdf" required>
+
+                <label for="request">Téléverser Demande de Stage :</label>
+                <input type="file" id="request" name="request" accept=".pdf,.doc,.docx" required>
+            </div>
+
+            <div class="right-section">
+                <label for="firstName">Prénom :</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="lastName">Nom :</label>
+                <input type="text" id="lastName" name="lastName" required>
+
+                <label for="cin">CIN :</label>
+                <input type="text" id="cin" name="cin" required>
+
+                <label for="email">Adresse E-mail :</label>
+                <input type="email" id="email" name="email" value="example@mail.com" readonly>
+
+                <label for="phone">Numéro de Téléphone :</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <button type="submit">Soumettre la demande</button>
+        </form>
+    </div>
+
+    
+</body>
+</html>
