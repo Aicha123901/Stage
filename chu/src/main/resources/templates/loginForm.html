@@ -29,18 +29,18 @@
         </div>
         <div class="signup-link">Pas encore membre ? <a href="#">Inscrivez-vous maintenant</a></div>
       </form>
-      <form action="#" class="signup">
+      <form action="/signup" method="post" class="signup" th:object="${user}">
         <div class="field">
-          <input type="text" name="nom" placeholder="Nom" required>
+          <input type="text" name="nom" th:field="*{nom}" required>
         </div>
         <div class="field">
-          <input type="text" name="prenom" placeholder="Prenom" required>
+          <input type="text" name="prenom" th:field="*{prenom}" placeholder="Prenom" required>
         </div>
         <div class="field">
-          <input type="text" placeholder="Adresse e-mail" required>
+          <input type="text" name="email" th:field="*{email}" placeholder="Adresse e-mail" required>
         </div>
         <div class="field">
-          <input type="password" placeholder="Mot de passe" required>
+          <input type="password" name="password" th:field="*{password}" placeholder="Mot de passe" required>
         </div>
         <div class="field btn">
           <div class="btn-layer"></div>
