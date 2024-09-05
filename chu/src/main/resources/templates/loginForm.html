@@ -31,7 +31,7 @@
       </form>
       <form action="/signup" method="post" class="signup" th:object="${user}">
         <div class="field">
-          <input type="text" name="nom" th:field="*{nom}" required>
+          <input type="text" name="nom" th:field="*{nom}" placeholder="Nom">
         </div>
         <div class="field">
           <input type="text" name="prenom" th:field="*{prenom}" placeholder="Prenom" required>
